@@ -1,7 +1,7 @@
 <template>
   <div class="well">
-    <h3>Singn up</h3>
-    <h4>Comming soon</h4>
+    <h3>Sign up</h3>
+    <h4>Coming soon</h4>
   </div>
 </template>
 

@@ -11,6 +11,7 @@ Route::group([
     ], function () {
         Route::post('/auth/token/revoke', 'AuthController@revokeToken');
         Route::get('/categories/full-list', 'CategoriesController@fullList');
+        Route::get('/users/full-list', 'UsersController@fullList');
 
         Route::resource('/categories', 'CategoriesController', [
             'except' => ['create', 'edit'],
@@ -19,6 +20,10 @@ Route::group([
         Route::resource('/products', 'ProductsController', [
             'except' => ['create', 'edit'],
         ]);
+
+        Route::resource('/users', 'UsersController', [
+            'except' => ['create', 'edit'],
+        ]);        
 
         Route::get('/me', 'MeController@show');
     });

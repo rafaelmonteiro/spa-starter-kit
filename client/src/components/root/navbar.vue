@@ -33,9 +33,6 @@
       /* eslint-disable no-undef */
       navigate(name) {
         switch (name) {
-          case 'codecasts':
-            window.location = 'https://codecasts.com.br/'
-            break;
           case 'logout':
             this.logout()
             break;
@@ -55,12 +52,12 @@
     <!-- http://element.eleme.io/#/en-US/component/menu -->
     <el-menu theme="dark" default-active="1" class="cc-navigation"
       mode="horizontal" @select="navigate">
-      <el-menu-item index="codecasts" class="brand">Codecasts.com.br</el-menu-item>
       <el-menu-item index="dashboard.index">Dashboard</el-menu-item>
       <el-submenu index="menu-modules">
         <template slot="title">Modules</template>
         <el-menu-item index="categories.index">Categories</el-menu-item>
         <el-menu-item index="products.index">Products</el-menu-item>
+        <el-menu-item index="users.index">Users</el-menu-item>
       </el-submenu>
       <el-submenu index="menu-user" class="logout-button">
         <template slot="title">{{ currentUser.name }}</template>

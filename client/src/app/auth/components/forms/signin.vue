@@ -50,6 +50,7 @@
         <el-input v-model="password" type="password"></el-input>
       </el-form-item>
       <el-button @click="submit">Login</el-button>
+      <el-button @click="reset">Clear</el-button>
     </el-form>
   </div>
 </template>
